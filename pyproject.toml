@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mia"
+version = "0.1.0"
+description = "'M' Intelligence Agency."
+readme = "README.md"
+license = { file="LICENSE.txt" }
+keywords = ["ai", "data"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Database",
+    "Topic :: Office/Business",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "beautifulsoup4 >= 4.11.2, < 5",
+    "lxml >= 4.9.2, < 5",
+    "pandas >= 1.5.3, < 2",
+    "plotly >= 5.13.1, < 6",
+    "psycopg2 >= 2.9.5, < 3",
+    "requests >= 2.28.2, < 3",
+    "scikit-learn >= 1.2.1, < 2",
+]
+
+[project.scripts]
+mia = "mia:main"
+
+[project.urls]
+"repository" = "https://github.com/shtsoft/mia"
